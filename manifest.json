@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Volume Booster – Loudfire",
+  "version": "1.0.0",
+  "description": "Make a quiet tab louder, up to 600%, without muting other sites. Off until you use it; remembers each site if you ask.",
+  "homepage_url": "https://github.com/prometheus-maker/loudfire",
+  "icons": { "48": "icons/icon-48.png", "96": "icons/icon-96.png", "128": "icons/icon-128.png" },
+  "action": {
+    "default_title": "Volume Booster",
+    "default_popup": "src/popup.html",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png" }
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "optional_host_permissions": ["*://*/*"],
+  "background": { "scripts": ["src/background.js"] },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "loudfire@prometheus-maker.github.io",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}

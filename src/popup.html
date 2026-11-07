@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><span class="logo">🔥</span><b>Volume Booster</b><span id="host" class="host"></span></header>
+<div class="big"><span id="pct">100%</span></div>
+<input id="slider" type="range" min="0" max="600" step="10" value="100" aria-label="Volume">
+<div class="marks"><span style="left:0%">0</span><span style="left:16.67%">100%</span><span style="left:50%">300%</span><span style="left:100%">600%</span></div>
+<div class="meter" aria-hidden="true"><div id="bar"></div></div>
+<div class="row">
+  <button id="reset">Back to 100%</button>
+  <label class="remember"><input type="checkbox" id="remember"> Remember for this site</label>
+</div>
+<p id="msg" class="msg"></p>
+<footer>Off until you move the slider. Nothing leaves your browser.</footer>
+<script src="popup.js"></script>
+</body></html>

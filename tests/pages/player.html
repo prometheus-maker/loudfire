@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>Loudfire test</title>
+<h1>Two players</h1>
+<p>Same-site: <audio id="same" src="tone.wav" loop controls></audio></p>
+<p>Other site, no CORS: <audio id="other" loop controls></audio></p>
+<script>document.getElementById('other').src = location.search.slice(1) || '';</script>
